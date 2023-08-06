@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+:root {
+  --clr-primary: #1ebd1e;
+  --clr-primary-alt1: #62be1e;
+  --clr-white: #ffffff;
+  --clr-black: #0e0b16fb;
+  --clr-footer: #243238;
+  --clr-grey: #e9e7e7;
+  --spacing: 0.05rem;
+  --transition: all 0.3s linear;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Global classes */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  letter-spacing: var(--spacing);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/* Local classes */
+
+.loading {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--clr-grey);
+  border-radius: 50%;
+  border-top: 10px solid var(--clr-primary);
+  animation: animate 1.5s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* @layer base {
+  h1,h2,h3,h4,p,br{
+    @apply space-y-4;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
