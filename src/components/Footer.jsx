@@ -1,11 +1,12 @@
 import React from "react";
+import Card from "./ui/Card";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col md:flex-row bg-blueblack text-grey absolute bottom-0 p-8">
-      <div className="space-y-4">
-        <h1 className="text-center font-bold">ABOUT</h1>
-        <p>
+    <footer className='absolute bottom-0 bg-blueblack text-white grid grid-cols-1 sm:grid-cols-3 gap-6 sm:px-8 px-5 py-16'>
+      <div className="">
+        <h1 className="mb-1 font-semibold ">ABOUT</h1>
+        <p className="text-grey">
           Local-Connect is a large company with more than 10 years of experience
           in helping people with their house problems and malfunctions. During
           our work we helped a huge number of people and have garnered a
@@ -13,12 +14,12 @@ const Footer = () => {
           don’t fear any difficulties
         </p>
       </div>
-      <div className="space-y-4">
-        <h1 className="text-center font-bold ">ANNOUNCEMENT</h1>
+      <div className="">
+        <h1 className="  ">ANNOUNCEMENT</h1>
         <p>agshdj adsfdgnfg dsfghh dsfghjj</p>
       </div>
-      <div className="space-y-4">
-        <h1 className="text-center font-bold ">CONTACT</h1>
+      <div className="">
+        <h1 className="  ">CONTACT</h1>
         <p>
           <li>dasdasdsa</li>
           <li>dasdasdsa</li>
@@ -27,7 +28,7 @@ const Footer = () => {
           <li>dasdasdsa</li>
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

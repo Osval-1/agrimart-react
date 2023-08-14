@@ -1,8 +1,6 @@
 import React from 'react'
 import Loading from './components/ui/Loading'
-import Error from './components/ui/Loading'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+import {Footer,Card,NavBar,Error} from './components'
 
 import { useState } from 'react'
 
@@ -12,6 +10,9 @@ const App = () => {
     <main className=''>
       { isLoading && <Loading/>}
       <NavBar/>
+      <Card>
+         <h1 className=''>ASD</h1>
+      </Card>
       <Footer/>
     </main>
   )

@@ -5,7 +5,7 @@
   --clr-white: #ffffff;
   --clr-black: #0e0b16fb;
   --clr-footer: #243238;
-  --clr-grey: #e9e7e7;
+  --clr-grey: #bebdbd;
   --spacing: 0.05rem;
   --transition: all 0.3s linear;
   --radius: 0.25rem;
@@ -49,11 +49,6 @@ li {
     transform: rotate(360deg);
   }
 }
-/* @layer base {
-  h1,h2,h3,h4,p,br{
-    @apply space-y-4;
-  }
-} */
 
 @tailwind base;
 @tailwind components;

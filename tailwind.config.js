@@ -7,7 +7,7 @@ module.exports = {
       white: "#ffffff",
       black: "#000000",
       blueblack:'#243238',
-      grey: "#e9e7e7",
+      grey: "#bebdbd",
     },
     fontFamily:{
       sans:['Open Sans','sans-serif']

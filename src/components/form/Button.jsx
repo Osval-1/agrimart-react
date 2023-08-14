@@ -1,13 +1,14 @@
 import React from "react";
 
-const Button = ({ text, bgColor, width }) => {
+const Button = ({ children, bgColor, width,...attributes }) => {
   return (
     <div>
       <button
-        type="submit"
+        type="button"
         className={`${bgColor} ${width} py-2 rounded-xl font-bold cursor-pointer`}
+        {...attributes}
       >
-        {text}
+        {children}
       </button>
     </div>
   );

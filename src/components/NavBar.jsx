@@ -29,7 +29,6 @@ const NavBar = () => {
             <button href="#">HELP</button>
           </li>
         </div>
-        {/* <Button width='w-24'text='Login' bgColor='bg-white'/> */}
       </div>
     </nav>
   );
