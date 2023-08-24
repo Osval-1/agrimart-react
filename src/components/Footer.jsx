@@ -3,7 +3,7 @@ import Card from "./ui/Card";
 
 const Footer = () => {
   return (
-    <footer className='absolute bottom-0 bg-blueblack text-white grid grid-cols-1 sm:grid-cols-3 gap-6 sm:px-8 px-5 py-16'>
+    <footer className='relative bottom-0 bg-blueblack text-white grid grid-cols-1 sm:grid-cols-3 gap-6 sm:px-8 px-5 py-16'>
       <div className="">
         <h1 className="mb-1 font-semibold ">ABOUT</h1>
         <p className="text-grey">

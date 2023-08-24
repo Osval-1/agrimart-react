@@ -6,7 +6,7 @@ import { HiMenu } from "react-icons/hi";
 const NavBar = () => {
   return (
     <nav>
-      <div className="flex flex-row bg-green px-1 py-2 justify-between items-center drop-shadow-xl ">
+      <div className="flex flex-row bg-green px-1 py-2 justify-between items-center ">
         <div className="w-1/3 flex items-center text-white">
           <BiLeaf className="text-3xl text-white " />
           <div>LOCAL-CONNECT</div>

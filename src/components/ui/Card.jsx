@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Card = ({children ,title}) => {
+const Card = ({ children, title }) => {
   return (
-    <div className='w-full flex justify-center items-center'>
-      <h1 className='mb-1 font-semibold text-xl'>{title}</h1>
-      <div className='text-grey '>
-        {children}
-      </div>
-</div>
-  )
-}
+    <div className="w-56 h-72 ">
+      <h1 className="flex justify-center font-semibold text-xl mb-8">{title}</h1>
+      <p className="tracking-wider">{children}</p>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
