@@ -17,6 +17,9 @@ const Footer = () => {
       <div className="">
         <h1 className="  ">ANNOUNCEMENT</h1>
         <p>agshdj adsfdgnfg dsfghh dsfghjj</p>
+        <p>agshdj adsfdgnfg dsfghh dsfghjj</p>
+        <p>agshdj adsfdgnfg dsfghh dsfghjj</p>
+        <p>agshdj adsfdgnfg dsfghh dsfghjj</p>
       </div>
       <div className="">
         <h1 className="  ">CONTACT</h1>
