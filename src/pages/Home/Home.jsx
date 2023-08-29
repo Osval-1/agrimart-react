@@ -18,9 +18,9 @@ const Home = () => {
     <main className="h-screen">
       {isLoading && <Loading />}
       {/* <SideBar toogle={toogle} /> */}
-      {<Modal/>}
+      {showModal?<Modal/>:null}
       <NavBar />
-      <div className="mx-1  mt-8 md:mx-6">
+      <div className="mx-1 mt-8 md:mx-6">
         {/* <Card> */}
         <div className=" md:flex-row">
           <div>
