@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, NavBar, Footer,Modal, Loading, Image } from "../../components";
+import { Card, NavBar, Footer, Modal, Loading, Image } from "../../components";
 import PlaceHolder from "../../assets/PlaceHolder.png";
 import { BiLeaf } from "react-icons/bi";
 import Reviews from "../../components/ui/Reviews";
@@ -8,17 +8,19 @@ import SideBar from "../../components/SideBar";
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [toogle, setToogle] = useState(true);
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false);
 
-  const toogleHandler = (toogle) => {
+  const toogleHandler = (e) => {
+    e.stopPropagation();
     setToogle(!toogle);
   };
 
   return (
     <main className="h-screen">
       {isLoading && <Loading />}
-      {/* <SideBar toogle={toogle} /> */}
-      {showModal?<Modal/>:null}
+      <SideBar toogleHandler={toogleHandler} toogle={toogle} />
+      <button onClick={toogleHandler}> show sidebar</button>
+      {showModal && <Modal />}
       <NavBar />
       <div className="mx-1 mt-8 md:mx-6">
         {/* <Card> */}
