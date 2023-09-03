@@ -1,24 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const SideBar = ({ toogleHandler, toogle }) => {
+const SideBar = ({ toogleHandler, toogle, toogleFromBackground }) => {
   return (
     <section
       className={`fixed bg-black/10 h-screen md:hidden  transition-all duration-1000 right-0  z-10 ${
         toogle ? "w-screen translate-x-0" : "translate-x-full w-0"
       }`}
-      onClick={toogleHandler}
     >
-      <div className="flex justify-between ml-9">
+        <div className="bg-white absolute h-screen right-0 z-50 w-2/3 shadow-lg overflow-x-hidden overflow-y-auto ">
         <button
-          className="text-black text-2xl font-extrabold"
+          className="text-black text-2xl font-extrabold ml-4"
           onClick={toogleHandler}
         >
           x
         </button>
-        <div className="bg-white fixed h-screen right-0 z-50 w-2/3 shadow-lg overflow-x-hidden overflow-y-auto ">
-          Sidebar
+          sidebar
+          <Link to="/"></Link>
         </div>
-      </div>
     </section>
   );
 };

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Card, NavBar, Footer, Modal, Loading, Image } from "../../components";
+import { Card, NavBar, Footer, Modal, Loading, Image ,ScrollToTop} from "../../components";
 import PlaceHolder from "../../assets/PlaceHolder.png";
 import { BiLeaf } from "react-icons/bi";
 import Reviews from "../../components/ui/Reviews";
 import SideBar from "../../components/SideBar";
+
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -14,17 +15,19 @@ const Home = () => {
     e.stopPropagation();
     setToogle(!toogle);
   };
+  
+
 
   return (
     <main className="h-screen">
       {isLoading && <Loading />}
-      <SideBar toogleHandler={toogleHandler} toogle={toogle} />
+      <SideBar toogleHandler={toogleHandler} toogle={toogle}  />
       <button onClick={toogleHandler}> show sidebar</button>
       {showModal && <Modal />}
       <NavBar />
       <div className="mx-1 mt-8 md:mx-6">
         {/* <Card> */}
-        <div className=" md:flex-row">
+        <div className="md:flex-row">
           <div>
             <h1 className="font-bold text-3xl text-center ">
               BUY DIRECTLY FROM FARMERS ON
@@ -65,6 +68,7 @@ const Home = () => {
         </div>
       </div>
       <Reviews />
+      <ScrollToTop className='relative bottom-0 right-0 z-10'/>
       <Footer />
     </main>
   );

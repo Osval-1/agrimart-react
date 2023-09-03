@@ -7,5 +7,7 @@ import Loading from "./ui/Loading";
 import Error from "./ui/Error";
 import Button from "./form/Button";
 import Image from "./ui/Image";
+import ScrollToTop from "./ui/ScrollToTop";
 
-export { Card, Footer, NavBar, Modal, Item, Error, Loading, Button, Image };
+
+export { Card, Footer, NavBar, Modal, Item, Error, Loading, Button, Image ,ScrollToTop};
