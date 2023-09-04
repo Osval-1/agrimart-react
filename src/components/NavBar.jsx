@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./form/Button";
+import Button from "./common/Button";
 import { BiLeaf } from "react-icons/bi";
 import { HiMenu } from "react-icons/hi";
 

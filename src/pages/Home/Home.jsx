@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { Card, NavBar, Footer, Modal, Loading, Image ,ScrollToTop} from "../../components";
+import {
+  Card,
+  NavBar,
+  Footer,
+  Modal,
+  Loading,
+  Image,
+  ScrollToTop,
+} from "../../components";
 import PlaceHolder from "../../assets/PlaceHolder.png";
 import { BiLeaf } from "react-icons/bi";
-import Reviews from "../../components/ui/Reviews";
+import Reviews from "../../components/common/Reviews";
 import SideBar from "../../components/SideBar";
-
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -15,13 +22,11 @@ const Home = () => {
     e.stopPropagation();
     setToogle(!toogle);
   };
-  
-
 
   return (
     <main className="h-screen">
       {isLoading && <Loading />}
-      <SideBar toogleHandler={toogleHandler} toogle={toogle}  />
+      <SideBar toogleHandler={toogleHandler} toogle={toogle} />
       <button onClick={toogleHandler}> show sidebar</button>
       {showModal && <Modal />}
       <NavBar />
@@ -68,7 +73,7 @@ const Home = () => {
         </div>
       </div>
       <Reviews />
-      <ScrollToTop className='relative bottom-0 right-0 z-10'/>
+      <ScrollToTop className="relative bottom-0 right-0 z-10" />
       <Footer />
     </main>
   );
