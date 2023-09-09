@@ -1,23 +1,13 @@
-import Card from "./common/Card";
+import Card from "./ui/Card";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import Modal from "./common/Modal";
-import Item from "./common/Item";
-import Loading from "./common/Loading";
-import Error from "./common/Error";
-import Button from "./common/Button";
-import Image from "./common/Image";
-import ScrollToTop from "./common/ScrollToTop";
+import Modal from "./ui/Modal";
+import Item from "./ui/Item";
+import Loading from "./ui/Loading";
+import Error from "./ui/Error";
+import Button from "./form/Button";
+import Image from "./ui/Image";
+import ScrollToTop from "./ui/ScrollToTop";
 
-export {
-  Card,
-  Footer,
-  NavBar,
-  Modal,
-  Item,
-  Error,
-  Loading,
-  Button,
-  Image,
-  ScrollToTop,
-};
+
+export { Card, Footer, NavBar, Modal, Item, Error, Loading, Button, Image ,ScrollToTop};

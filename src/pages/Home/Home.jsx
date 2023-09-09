@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Card,
   NavBar,
@@ -19,14 +19,14 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
 
   const toogleHandler = (e) => {
-    e.stopPropagation();
     setToogle(!toogle);
+    e.stopPropagation();
   };
-
+ 
   return (
     <main className="h-screen">
       {isLoading && <Loading />}
-      <SideBar toogleHandler={toogleHandler} toogle={toogle} />
+      {toogle && <SideBar toogleHandler={toogleHandler} toogle={toogle} />}
       <button onClick={toogleHandler}> show sidebar</button>
       {showModal && <Modal />}
       <NavBar />
